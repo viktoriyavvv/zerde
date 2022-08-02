@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#c2c0c0]">
-    <div class="container mx-auto p-20 b-20">
+  <div class="bg-[#c2c0c0] sm:pt-[80px] sm:pb-[80px] pt-20">
+    <div class="lg:container mx-auto xl:w-[1440px] p-2.5 xl:p-0">
       <div class="w-full flex font-medium">
         <h1 class="w-full text-[#313131] text-[42px] leading-[55px]">
           НОВОСТИ
@@ -11,14 +11,12 @@
           <ArrowIcon class="ml-5 mt-1" />
         </button>
       </div>
-      <div class="grid grid-rows-2 grid-flow-col gap-4 mt-8 ml-28">
-        <div class="row-span-2">
+      <div class="flex justify-center mt-8 space-x-5">
+        <div class="w-[580px]">
           <img src="/src/assets/images/Picture2.jpg" class="" alt="..." />
         </div>
-        <div class="col-span-10">
+        <div class="w-[580px] space-y-5">
           <img src="/src/assets/images/Picture3.jpg" class="" alt="..." />
-        </div>
-        <div class="row-span-1 col-span-1">
           <img src="/src/assets/images/Picture4.jpg" class="" alt="..." />
         </div>
       </div>

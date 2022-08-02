@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-hidden relative flex w-full h-[700px]">
+  <div class="relative flex w-full h-[700px]">
     <div class="">
       <img
         src="/src/assets/images/Picture1.jpg"
@@ -14,11 +14,11 @@
       </button>
     </div>
 
-    <div class="relative w-[400px] ml-40 text-white sm:static z-20">
+    <div class="mx-auto relative w-[1440px] text-white sm:static z-20">
       <div class="text-[42px] leading-[55px] sm:pt-[120px] pt-[340px] mb-5">
         <h1>ШКОЛА ZERDE</h1>
       </div>
-      <p class="text-base sm:mb-[25px] mb-10">
+      <p class="text-base sm:mb-[25px] mb-10 w-[400px]">
         Сила знаний равна благородству сердца и силе духа - это условия
         формирования и развития казахской интеллегенции
       </p>
@@ -32,6 +32,10 @@
   </div>
   <NewsZerdeCard />
   <SchoolValuesCard />
+  <SchoolGoalsCard />
+  <PartnersCard />
+  <ApplicationFormCard />
+  <FooterCard />
 </template>
 
 <script lang="ts">
@@ -39,12 +43,21 @@ import { defineComponent } from "vue";
 import DownIcon from "@/components/icons/DownIcon.vue";
 import NewsZerdeCard from "@/components/NewsZerdeCard.vue";
 import SchoolValuesCard from "@/components/SchoolValuesCard.vue";
+import SchoolGoalsCard from "@/components/SchoolGoalsCard.vue";
+import PartnersCard from "@/components/PartnersCard.vue";
+import ApplicationFormCard from "@/components/ApplicationFormCard.vue";
+import FooterCard from "@/components/FooterCard.vue";
+
 export default defineComponent({
   name: "MainPage",
   components: {
     DownIcon,
     NewsZerdeCard,
     SchoolValuesCard,
+    SchoolGoalsCard,
+    PartnersCard,
+    ApplicationFormCard,
+    FooterCard,
   },
 });
 </script>
