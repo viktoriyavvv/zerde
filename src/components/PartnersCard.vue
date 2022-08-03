@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#ffffff] sm:pt-[80px] sm:pb-[80px] pt-20">
-    <div class="lg:container mx-auto xl:w-[1440px] p-2.5 xl:p-0">
+    <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div class="font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           НАШИ
@@ -8,9 +8,7 @@
         </h1>
       </div>
       <div class="mt-10">
-        <div
-          class="sm:flex sm:justify-center space-x-10 sm:items-center align-middle sm:flex-wrap"
-        >
+        <div class="flex justify-center space-x-10 items-center flex-wrap">
           <img src="/src/assets/images/Picture9.jpg" class="" alt="..." />
           <img src="/src/assets/images/Picture10.jpg" class="" alt="..." />
           <img src="/src/assets/images/Picture11.jpg" class="" alt="..." />

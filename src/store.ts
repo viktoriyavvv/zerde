@@ -19,9 +19,7 @@ export const useStore = defineStore('main', {
       console.log('app initialized!')
     },
 
-    increment(value = 1) {
-      this.count += value
-    },
+
   },
 
   getters: {

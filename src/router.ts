@@ -1,19 +1,36 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import MainPage from '../src/pages/MainView.vue'
+import MainView from "../src/pages/MainView.vue";
+import SchoolLifeView from "../src/pages/SchoolLifeView.vue";
+import AboutSchoolView from "../src/pages/AboutSchoolView.vue";
+import SchoolStaffView from "../src/pages/SchoolStaffView.vue";
+
 const routes = [
   {
-    path: '/',
-    component: MainPage,
-    meta: {
-      title: 'Zerde',
-    },
+    path: "/main",
+    component: MainView,
+    name: "Главная",
   },
-]
+  {
+    path: "/life",
+    component: SchoolLifeView,
+    name: "Жизнь школы",
+  },
+  {
+    path: "/about",
+    component: AboutSchoolView,
+    name: "О школе",
+  },
+  {
+    path: "/staff",
+    component: SchoolStaffView,
+    name: "Коллектив школы",
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-})
+});
 
-export default router
+export default router;

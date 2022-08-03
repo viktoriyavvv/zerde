@@ -15,22 +15,20 @@
             />
           </div>
 
-          <div class="text-[12px] leading-[15px] text-[#F5F6FA]">
-            <p class="mb-[10px] hidden sm:block">
+          <div class="text-base text-[#F5F6FA]">
+            <p class="mb-[10px] hidden sm:block font-medium">
               Школа ZERDE, 2022<br />
               Все права защищены.
             </p>
-            <router-link to="" class="mb-[10px] hidden sm:block"
+            <router-link to="" class="mb-[10px] hidden sm:block text-sm"
               >Политика конфиденциальности</router-link
             >
           </div>
         </div>
 
         <div class="hidden sm:block">
-          <div class="text-[14px] block text-[#F5F6FA] leading-[17px]">
-            <p class="text-[16px] font-semibold leading-[20px] mb-[20px]">
-              Жизнь школы
-            </p>
+          <div class="text-base font-medium block text-[#F5F6FA]">
+            <p class="font-semibold leading-[20px] mb-[20px]">Жизнь школы</p>
             <router-link to="" class="block mb-[17px]">Жизнь школы</router-link>
             <router-link to="" class="block mb-[17px]">Галерея</router-link>
             <router-link to="" class="block mb-[17px]">Новости</router-link>
@@ -92,10 +90,8 @@
           </div>
         </div>
 
-        <div class="hidden sm:block text-[14px] text-[#F5F6FA] leading-[17px]">
-          <p
-            class="text-[16px] font-semibold text-[#F5F6FA] leading-[20px] mb-[20px]"
-          >
+        <div class="hidden sm:block text-base font-medium text-[#F5F6FA]">
+          <p class="font-semibold text-[#F5F6FA] leading-[20px] mb-[20px]">
             О школе
           </p>
           <router-link to="" class="block mb-[17px]">О школе</router-link>
@@ -162,8 +158,8 @@
           </div>
         </div>
 
-        <div class="text-[20px] text-[#F5F6FA] leading-[20px]">
-          <p class="mb-[20px] font-semibold text-[16px]">Связаться с нами</p>
+        <div class="text-base font-medium text-[#F5F6FA]">
+          <p class="mb-[20px] font-semibold">Связаться с нами</p>
           <p class="mb-[15px]">+7 (727) 727-72-72</p>
           <p class="mb-[15px]">+7 (701) 000-01-01</p>
           <p class="mb-[15px]">info@zerde.school</p>

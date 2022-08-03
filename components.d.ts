@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./src/components/layouts/Footer.vue')['default']
     FooterCard: typeof import('./src/components/FooterCard.vue')['default']
     Header: typeof import('./src/components/layouts/Header.vue')['default']
+    HeaderCard: typeof import('./src/components/HeaderCard.vue')['default']
     ImageInfo: typeof import('./src/components/ImageInfo.vue')['default']
     Instagram: typeof import('./src/components/icons/Instagram.vue')['default']
     Modal: typeof import('./src/components/layouts/Modal.vue')['default']

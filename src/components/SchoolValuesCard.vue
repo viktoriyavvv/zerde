@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[#ffffff] sm:pt-[80px] sm:pb-[80px] pt-20">
-    <div class="lg:container mx-auto xl:w-[1440px] p-2.5 xl:p-0">
+    <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div class="font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           <span class="text-[#007CC3]">ЦЕННОСТИ</span>
@@ -9,14 +9,14 @@
       </div>
       <div class="flex justify-center">
         <div class="sm:w-[640px] w-full">
-          <div class="mt-5 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-6 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">01</div>
               <div>
                 <div class="mb-2 text-[28px] leading-[37px] text-[#313131]">
                   Доброта
                 </div>
-                <p class="text-base text-[#313131]">
+                <p class="text-sm text-[#313131]">
                   Для свободного развития творчества детей, для их
                   психологического комфорта мы создаем атмосферу взаимопомощи,
                   толерантности, дружеского общения.
@@ -31,7 +31,7 @@
                 <div class="mb-2 text-[28px] leading-[37px] text-[#313131]">
                   Справедливость
                 </div>
-                <p class="text-base text-[#313131]">
+                <p class="text-sm text-[#313131]">
                   Коллектив живет и работает в соответствии с принципами
                   справедливости. Это означает уважение интересов друг друга и
                   предоставление равного доступа к качественному образованию.
@@ -46,7 +46,7 @@
                 <div class="mb-2 text-[28px] leading-[37px] text-[#313131]">
                   Ответственность
                 </div>
-                <p class="text-base text-[#313131]">
+                <p class="text-sm text-[#313131]">
                   Для нас важно развивать личную и коллективную ответственность.
                   Конкурентоспособность человека определяет способность
                   принимать ответственные решения, продуктивно и эффективно
@@ -62,7 +62,7 @@
                 <div class="mb-2 text-[28px] leading-[37px] text-[#313131]">
                   Честность
                 </div>
-                <p class="text-base text-[#313131]">
+                <p class="text-sm text-[#313131]">
                   Академическая честность - это не просто школьная политика.
                   Стремление к высоким целям одинаково важно при высоком
                   качестве образования. Мы уверены, что честность и успех
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="ml-5 mt-4 space-y-9">
+        <div class="ml-5 mt-6 space-y-7">
           <img
             src="/src/assets/images/Picture5.jpg"
             class="shadow-2xl w-[520px]"
