@@ -1,7 +1,9 @@
 <template>
-  <div class="bg-[#c2c0c0] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
+  <div class="bg-[#C4C4C4] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="flex justify-between font-medium">
+      <div
+        class="sm:md:lg:xl:w-[1200px] mx-auto flex justify-between font-medium"
+      >
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           НОВОСТИ
           <span class="text-[#007CC3]">ZERDE</span>

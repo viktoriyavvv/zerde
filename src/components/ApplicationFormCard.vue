@@ -1,13 +1,13 @@
 <template>
   <div class="bg-[url('/src/assets/images/Background.jpg')] bg-cover bg-center">
-    <div class="xl:container mx-auto xl:w-[1440px] p-2.5 xl:p-0">
-      <div class="font-medium mb-8">
+    <div class="lg:container mx-auto p-2.5 xl:p-0">
+      <div class="w-[1200px] mx-auto font-medium mb-8">
         <h1 class="text-[#313131] text-[42px] leading-[55px] pt-20">
           ОСТАЛИСЬ
           <span class="text-[#007CC3]">ВОПРОСЫ?</span>
         </h1>
       </div>
-      <div class="sm:flex justify-between">
+      <div class="sm:flex justify-between sm:w-[1200px] w -full mx-auto">
         <div class="sm:w-[380px] mb-16">
           <p class="text-lg text-[#313131] mb-10">
             Заполните заявку и мы свяжемся с вами

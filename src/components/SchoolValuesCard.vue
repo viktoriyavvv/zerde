@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#ffffff] sm:pt-[80px] sm:pb-[80px] pt-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="font-medium">
+      <div class="w-[1200px] mx-auto font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           <span class="text-[#007CC3]">ЦЕННОСТИ</span>
           ШКОЛЫ
