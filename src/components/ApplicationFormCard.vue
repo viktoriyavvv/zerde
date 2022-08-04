@@ -9,24 +9,33 @@
       </div>
       <div class="sm:flex justify-between sm:w-[1200px] w -full mx-auto">
         <div class="sm:w-[380px] mb-16">
-          <p class="text-lg text-[#313131] mb-10">
+          <p id="message" class="text-lg text-[#313131] mb-10">
             Заполните заявку и мы свяжемся с вами
           </p>
-          <form ref="formRef" class="font-serif" @submit.prevent="submitForm">
+
+          <form
+            action="https://sheetdb.io/api/v1/033lsr0ddj426"
+            method="post"
+            id="sheetdb-form"
+            ref="formRef"
+            @submit.prevent="submitForm"
+            @submit="validPhone"
+          >
             <input
               v-model="inputData.name"
               type="text"
-              class="text-lg h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg focus:border-1-[#003a70]"
+              class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg focus:border-1-[#003a70]"
               placeholder="Ваше имя"
-              name="entry.722241710"
+              name="data[Имя]"
               required
             />
             <input
               v-model="inputData.telephone"
               type="tel"
-              class="text-lg h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg"
+              class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg"
               placeholder="Телефон"
-              name="entry.1730411161"
+              name="data[Телефон]"
+              id="phone"
               required
             />
 
@@ -36,6 +45,7 @@
             >
               Отправить
             </button>
+
             <p class="font-serif text-xs text-center">
               Нажимая кнопку отправить вы соглашаетесь с
               <a href="" class="text-[#007CC3] text-decoration-line: underline"
@@ -50,7 +60,6 @@
 </template>
 
 <script>
-import axios from "axios";
 export default {
   name: "ApplicationFormPage",
   data() {
@@ -59,30 +68,37 @@ export default {
         name: "",
         telephone: "",
       },
-      isModalShown: false,
     };
   },
   methods: {
     submitForm() {
-      const formRef = this.$refs.formRef;
-      const formData = new FormData(formRef);
-      const url = import.meta.env.VITE_GOOGLE_DOCS;
-
-      axios
-        .post(url, formData, {
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
+      let form = document.getElementById("sheetdb-form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(form.action, {
+          method: "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
         })
-        .then((res) => console.log(res));
-
-      this.inputData = {
-        name: "",
-        telephone: "",
-      };
-      this.isModalShown = true;
-      this.$emit("showModal", this.isModalShown);
+          .then((response) => response.json())
+          .then((html) => {
+            window.alert("Заявка отправлена");
+          });
+        e.target.reset();
+      });
+    },
+    // getErrorMsg() {
+    //   let msg = "Номер телефона введен неправильно!";
+    //   return msg;
+    // },
+    validPhone(phone) {
+      let re =
+        /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
+      let myPhone = document.getElementById("phone").value;
+      let valid = re.test(myPhone);
+      return valid;
+      if (!valid) {
+        return alert("Номер телефона введен неправильно!");
+      }
     },
   },
 };
