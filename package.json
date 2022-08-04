@@ -1,5 +1,5 @@
 {
-  "name": "vite-ts-tailwind-starter",
+  "name": "zerde",
   "version": "2.1.0",
   "scripts": {
     "dev": "vite",

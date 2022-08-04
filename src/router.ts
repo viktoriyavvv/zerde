@@ -7,7 +7,7 @@ import SchoolStaffView from "../src/pages/SchoolStaffView.vue";
 
 const routes = [
   {
-    path: "/main",
+    path: "/",
     component: MainView,
     name: "Главная",
   },
