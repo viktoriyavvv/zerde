@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#007CC3] sm:pt-[80px] sm:pb-[80px] pt-16 pb-16">
+  <div class="bg-[#007CC3] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="xl:container xl:w-[1440px] mx-auto p-2.5">
       <div
         class="sm:flex sm:justify-between text-center sm:text-left sm:flex-wrap"

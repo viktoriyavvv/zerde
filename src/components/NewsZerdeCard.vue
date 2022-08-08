@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F1F1F1] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
+  <div class="bg-[#da3434] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div
         class="sm:md:lg:xl:w-[1200px] mx-auto flex justify-between font-medium"
