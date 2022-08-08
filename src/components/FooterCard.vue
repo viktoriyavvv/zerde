@@ -184,6 +184,7 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
 import Instagram from "@/components/icons/Instagram.vue";
 import Facebook from "@/components/icons/Facebook.vue";
 import Youtube from "@/components/icons/Youtube.vue";
@@ -191,7 +192,7 @@ import Whatsapp from "@/components/icons/Whatsapp.vue";
 import DownIcon from "@/components/icons/DownIcon.vue";
 import ArrowIcon from "@/components/icons/ArrowIcon.vue";
 
-export default {
+export default defineComponent({
   name: "FooterLayout",
   components: {
     Instagram,
@@ -207,7 +208,7 @@ export default {
       collapseArrowProgram: false,
     };
   },
-};
+});
 </script>
 
 <style>

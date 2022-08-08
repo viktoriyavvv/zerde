@@ -9,7 +9,7 @@
       </div>
       <div class="flex justify-center">
         <div class="sm:w-[640px] w-full">
-          <div class="mt-6 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-6 rounded-lg bg-[#F1F1F1] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">01</div>
               <div>
@@ -24,7 +24,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-5 rounded-lg bg-[#F1F1F1] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">02</div>
               <div>
@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-5 rounded-lg bg-[#F1F1F1] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">03</div>
               <div>
@@ -55,7 +55,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-5 rounded-lg bg-[#F1F1F1] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">04</div>
               <div>
@@ -72,7 +72,7 @@
               </div>
             </div>
           </div>
-          <div class="mt-5 rounded-lg bg-[#c2c0c0] py-5 px-5 shadow-sm">
+          <div class="mt-5 rounded-lg bg-[#F1F1F1] py-5 px-5 shadow-sm">
             <div class="flex">
               <div class="text-[96px] text-[#007CC3] mr-4">05</div>
               <div>
@@ -121,6 +121,7 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
 export default defineComponent({
   name: "SchoolValuesPage",
 });

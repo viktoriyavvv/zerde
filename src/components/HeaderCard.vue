@@ -45,8 +45,9 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from "vue";
 import DownIcon from "./icons/DownIcon.vue";
-export default {
+export default defineComponent({
   name: "HeaderLayout",
   data() {
     return {
@@ -54,7 +55,7 @@ export default {
     };
   },
   components: { DownIcon },
-};
+});
 </script>
 
 <style>

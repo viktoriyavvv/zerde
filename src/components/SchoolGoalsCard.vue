@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#c2c0c0] sm:pt-[80px] sm:pb-[80px] pt-20">
+  <div class="bg-[#F1F1F1] sm:pt-[80px] sm:pb-[80px] pt-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div class="w-[1200px] mx-auto font-medium mb-8">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
@@ -44,9 +44,11 @@
   </div>
 </template>
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+
+export default defineComponent({
   name: "SchoolAdvances",
-};
+});
 </script>
 
 <style>

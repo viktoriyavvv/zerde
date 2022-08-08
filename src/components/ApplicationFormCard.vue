@@ -24,10 +24,7 @@
               v-if="errors.length"
               class="my-4 rounded-2xl border border-red-300 bg-red-50 p-4"
             >
-              <p>Пожалуйста исправьте указанные ошибки:</p>
-              <ul>
-                <li v-for="error in errors">{{ error }}</li>
-              </ul>
+              <div v-for="error in errors">{{ error }}</div>
             </div>
             <input
               v-model="name"
