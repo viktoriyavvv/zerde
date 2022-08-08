@@ -19,18 +19,27 @@
             id="sheetdb-form"
             ref="formRef"
             @submit.prevent="submitForm"
-            @submit="validPhone"
           >
+            <div
+              v-if="errors.length"
+              class="my-4 rounded-2xl border border-red-300 bg-red-50 p-4"
+            >
+              <p>Пожалуйста исправьте указанные ошибки:</p>
+              <ul>
+                <li v-for="error in errors">{{ error }}</li>
+              </ul>
+            </div>
             <input
-              v-model="inputData.name"
+              v-model="name"
               type="text"
               class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg focus:border-1-[#003a70]"
               placeholder="Ваше имя"
               name="data[Имя]"
+              id="name"
               required
             />
             <input
-              v-model="inputData.telephone"
+              v-model="telephone"
               type="tel"
               class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg"
               placeholder="Телефон"
@@ -40,6 +49,7 @@
             />
 
             <button
+              @click="checkForm"
               type="submit"
               class="h-[48px] sm:w-[380px] rounded-[10px] bg-[#007CC3] text-[#F5F6FA] text-base w-full mb-[15px] application__btn"
             >
@@ -60,14 +70,14 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   name: "ApplicationFormPage",
   data() {
     return {
-      inputData: {
-        name: "",
-        telephone: "",
-      },
+      errors: [],
+      name: "",
+      telephone: "",
     };
   },
   methods: {
@@ -86,22 +96,30 @@ export default {
         e.target.reset();
       });
     },
-    // getErrorMsg() {
-    //   let msg = "Номер телефона введен неправильно!";
-    //   return msg;
-    // },
-    validPhone(phone) {
-      let re =
-        /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
-      let myPhone = document.getElementById("phone").value;
-      let valid = re.test(myPhone);
-      return valid;
-      if (!valid) {
-        return alert("Номер телефона введен неправильно!");
+    checkForm(e) {
+      this.errors = [];
+
+      if (!this.name) {
+        this.errors.push("Укажите имя.");
       }
+      if (!this.telephone) {
+        this.errors.push("Укажите телефон.");
+      } else if (!this.validPhone(this.telephone)) {
+        this.errors.push("Укажите корректный телефон.");
+      }
+
+      if (!this.errors.length) {
+        return true;
+      }
+
+      e.preventDefault();
+    },
+    validPhone(telephone) {
+      var re = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
+      return re.test(telephone);
     },
   },
-};
+});
 </script>
 
 <style>
