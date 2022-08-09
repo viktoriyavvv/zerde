@@ -1,38 +1,52 @@
-# Vite, Vue3, Tailwind CSS (single-page app)
+# Vite + Vue 3 + Typescript + Tailwind Starter
 
-![Vite, Vue, Tailwind CSS](https://user-images.githubusercontent.com/11320080/111277027-a9384c00-8640-11eb-8323-21889bd7c609.png)
+Simple, opinionated, **fully typed**, and **production-ready** project template for Vite.
 
-This starter template includes:
+This template is **practical** and **batteries included** but not overly complex or bloated. Also explicit configuration over magic; it should be easy to understand how everything works, strip out anything you don't need, and fast to modify things to your needs.
 
-- [Vite 3](https://vitejs.dev/guide/)
-- [Vue 3](https://vuejs.org/guide/introduction.html)
-- [Tailwind CSS 3](https://tailwindcss.com/docs/configuration)
-- [Vue Router](https://github.com/vuejs/router)
-- [Inter var font](https://github.com/rsms/inter) (self-hosted, woff2, v3.19, with 'preload' attr, check out index.html)
-- [Headless UI](https://headlessui.com/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
-- [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
-  by the makers of Tailwind CSS
-- [prettier-plugin-tailwindcss](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier) - Automatic Class Sorting with Prettier
+Includes plenty of **examples and documentation** of how to do things but **minimal cruft** to delete to get you going.
 
-First-party plugins needed for Tailwind UI:
+Please [check out the homepage](https://vite-ts-tailwind-starter.vercel.app/) for full docs. A [detailed changelog](./CHANGES.md) is available. This repository is also [mirrored on GitLab](https://gitlab.com/uninen/vite-ts-tailwind-starter).
 
-- [tailwindcss/forms](https://github.com/tailwindlabs/tailwindcss-forms)
-- [tailwindcss/typography](https://tailwindcss.com/docs/typography-plugin)
-- [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
-- [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
+## Features
 
-### Getting Started
+- Vue 3.2
+- Pinia store (fully typed Vuex store is available up to version 1.13)
+- Routing using [vue-router 4](https://router.vuejs.org/)
+- TypeScript 4.6
+- Automatic package and component imports w/ [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) and [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
+- Tailwind CSS 3 w/ following plugins and configuration preinstalled:
+  - `@tailwindcss/aspect-ratio`
+  - `@tailwindcss/line-clamp`
+  - `@tailwindcss/typography`
+  - `@tailwindcss/forms`
+  - `firefox`-variant
+- PostCSS 8 w/ `postcss-nesting` plugin and `cssnano` for minimizing production CSS
+- Eslint
+- Prettier
+- Alias `@` to `<project_root>/src`
+- Predefined and fully typed global variables:
+  - `VITE_APP_VERSION` is read from `package.json` version at build time
+  - `VITE_APP_BUILD_EPOCH` is populated as `new Date().getTime()` at build time
+- Using newest `script setup` syntax w/ Ref sugar (see the official [Script Setup documentation](https://vuejs.org/api/sfc-script-setup.html) and [Ref Sugar RFC](https://github.com/vuejs/rfcs/discussions/369) discussion)
+- Vitest unit tests
+- Cypress.io e2e tests (configured similarly to `vue-cli`)
+- Cypress.io component tests
+- GitHub workflows
+  - Dependabot
+  - Automated unit tests
+  - Automated component tests
+  - Automated e2e tests
+- GitLab CI
+  - Automated unit tests
+  - Automated component tests 
+  - Automated e2e tests
 
-```sh
-npx degit web2033/vite-vue3-tailwind-starter vvt-app
-cd vvt-app
-```
+## Elsewhere
 
-```sh
-npm i
-npm run dev
-npm run build
-npm run serve
-```
+- [Follow @uninen](https://twitter.com/uninen) on Twitter
+- Read my continuously updating learnings from Vite / Vue / TypeScript and other Web development topics from my [Today I Learned site](https://til.unessa.net/)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/web2033/vite-vue3-tailwind-starter)
+## Contributing
+
+Contributions are welcome! Please follow the [code of conduct](./CODE_OF_CONDUCT.md) when interacting with others.
