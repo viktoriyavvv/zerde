@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import MainView from "../src/pages/MainView.vue";
+import index from "./pages/Index.vue";
 import SchoolLifeView from "../src/pages/SchoolLifeView.vue";
 import AboutSchoolView from "../src/pages/AboutSchoolView.vue";
 import SchoolStaffView from "../src/pages/SchoolStaffView.vue";
@@ -8,7 +8,7 @@ import SchoolStaffView from "../src/pages/SchoolStaffView.vue";
 const routes = [
   {
     path: "/",
-    component: MainView,
+    component: index,
     name: "Главная",
   },
   {
