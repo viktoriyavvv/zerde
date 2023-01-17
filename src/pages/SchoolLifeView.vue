@@ -5,7 +5,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import HeaderCard from "@/components/HeaderCard.vue";
+import HeaderCard from "@/layouts/TheHeader.vue";
 
 export default defineComponent({
   name: "SchoolLifePage",

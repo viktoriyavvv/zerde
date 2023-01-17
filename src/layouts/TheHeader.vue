@@ -3,10 +3,10 @@
     <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div class="flex pt-4 mb-4 justify-between">
         <img
-          src="/src/assets/images/Zerde.jpg"
+          src="/src/assets/images/Logo.png"
           alt="Zerde"
-          height="64"
-          width="64"
+          height="56"
+          width="148"
         />
         <div
           class="hidden sm:flex sm:justify-between sm:gap-5 items-center sm:text-sm xl:text-base text-white"
@@ -46,7 +46,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import DownIcon from "./icons/DownIcon.vue";
+import DownIcon from "../components/icons/DownIcon.vue";
 export default defineComponent({
   name: "HeaderLayout",
   data() {

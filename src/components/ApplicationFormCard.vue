@@ -112,7 +112,7 @@ export default defineComponent({
       e.preventDefault();
     },
     validPhone(telephone) {
-      var re = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
+      let re = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/;
       return re.test(telephone);
     },
   },
