@@ -25,12 +25,10 @@
   </div>
   <div class="bg-[#F1F1F1] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div
-        class="sm:md:lg:xl:w-[1200px] mx-auto flex justify-between font-medium"
-      >
+      <div class="mx-auto flex justify-between font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           НОВОСТИ
-          <span class="text-[#007CC3]">ZERDE</span>
+          <span class="text-[#096136]">ZERDE</span>
         </h1>
         <button class="flex text-base whitespace-nowrap">
           Перейти к новостям
@@ -73,9 +71,9 @@
   </div>
   <div class="bg-[#ffffff] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="w-[1200px] mx-auto font-medium">
+      <div class="sssssmx-auto font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
-          <span class="text-[#007CC3]">ЦЕННОСТИ</span>
+          <span class="text-[#096136]">ЦЕННОСТИ</span>
           ШКОЛЫ
         </h1>
       </div>
@@ -190,11 +188,11 @@
       </div>
     </div>
   </div>
-  <div class="bg-[#F1F1F1] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
+  <div class="sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="w-[1200px] mx-auto font-medium mb-8">
+      <div class="mx-auto font-medium mb-8">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
-          <span class="text-[#007CC3]">ЦЕЛИ</span>
+          <span class="text-[#096136]">ЦЕЛИ</span>
           ШКОЛЫ
         </h1>
       </div>
@@ -202,13 +200,13 @@
         class="sm:flex sm:justify-center text-[#313131] text-xl md:gap-3 font-medium"
       >
         <button
-          class="link_button justify-center w-full sm:w-[580px] sm:h-[140px] flex items-center mb-6 sm:mb-0 p-4"
+          class="rounded-2xl bg-[#F1F1F1] link_button justify-center w-full h-[100px] flex items-center mb-6 sm:mb-0 p-4"
         >
           <img src="/src/components/icons/Certificate.svg" alt="certificate" />
           <p class="xl:w-[360px] p-2">ДОСТИЖЕНИЯ КАЧЕСТВА</p>
         </button>
         <button
-          class="link_button justify-center w-full sm:w-[580px] sm:h-[140px] flex items-center mb-6 sm:mb-0 p-4"
+          class="rounded-2xl bg-[#F1F1F1] link_button justify-center w-full h-[100px] flex items-center mb-6 sm:mb-0 p-4"
         >
           <img src="/src/components/icons/Atom.svg" alt="atom" />
           <p class="xl:w-[360px] p-2">ИННОВАЦИОННАЯ ИНИЦИАТИВА</p>
@@ -219,13 +217,13 @@
         class="sm:flex justify-center text-[#313131] text-xl sm:mt-[20px] md:gap-3 font-medium"
       >
         <button
-          class="link_button justify-center w-full sm:w-[580px] sm:h-[140px] flex items-center mb-6 sm:mb-0 p-4"
+          class="rounded-2xl bg-[#F1F1F1] link_button justify-center w-full h-[100px] flex items-center mb-6 sm:mb-0 p-4"
         >
           <img src="/src/components/icons/Test.svg" alt="test" />
           <p class="xl:w-[360px] p-2">ЭФФЕКТИВНЫЙ МЕТОД</p>
         </button>
         <button
-          class="link_button justify-center w-full sm:w-[580px] sm:h-[140px] flex items-center mb-6 sm:mb-0 p-4"
+          class="rounded-2xl bg-[#F1F1F1] link_button justify-center w-full h-[100px] flex items-center mb-6 sm:mb-0 p-4"
         >
           <img src="/src/components/icons/Notebook.svg" alt="notebook" />
           <p class="xl:w-[360px] p-2">ДОСТУПНОЕ ОБРАЗОВАНИЕ</p>
@@ -235,10 +233,10 @@
   </div>
   <div class="bg-[#ffffff] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="w-[1200px] mx-auto font-medium">
+      <div class="mx-auto font-medium">
         <h1 class="text-[#313131] text-[42px] leading-[55px]">
           НАШИ
-          <span class="text-[#007CC3]">ПАРТНЕРЫ</span>
+          <span class="text-[#096136]">ПАРТНЕРЫ</span>
         </h1>
       </div>
       <div class="mt-10">
@@ -251,6 +249,7 @@
       </div>
     </div>
   </div>
+
   <ApplicationFormCard />
   <FooterCard />
 </template>
