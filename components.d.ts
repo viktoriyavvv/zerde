@@ -30,6 +30,7 @@ declare module '@vue/runtime-core' {
     SchoolGoalsCard: typeof import('./src/components/SchoolGoalsCard.vue')['default']
     SchoolHistory: typeof import('./src/components/SchoolHistory.vue')['default']
     SchoolValuesCard: typeof import('./src/components/SchoolValuesCard.vue')['default']
+    SendButton: typeof import('./src/components/SendButton.vue')['default']
     Whatsapp: typeof import('./src/components/icons/Whatsapp.vue')['default']
     Youtube: typeof import('./src/components/icons/Youtube.vue')['default']
   }
