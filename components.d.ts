@@ -9,6 +9,7 @@ declare module '@vue/runtime-core' {
     ApplicationForm: typeof import('./src/components/ApplicationForm.vue')['default']
     ApplicationFormCard: typeof import('./src/components/ApplicationFormCard.vue')['default']
     ArrowIcon: typeof import('./src/components/icons/ArrowIcon.vue')['default']
+    ArrowWhite: typeof import('./src/components/icons/ArrowWhite.vue')['default']
     CarouselInfo: typeof import('./src/components/CarouselInfo.vue')['default']
     ConnectButton: typeof import('./src/components/ConnectButton.vue')['default']
     DownIcon: typeof import('./src/components/icons/DownIcon.vue')['default']

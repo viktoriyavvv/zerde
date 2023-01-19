@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#313131] xl:fixed z-50 w-full opacity-75">
+  <div class="bg-[#313131]/25 xl:fixed z-10 w-full">
     <div class="lg:container mx-auto p-2.5 xl:p-0">
       <div class="flex pt-4 mb-4 justify-between">
         <img
@@ -9,7 +9,7 @@
           width="148"
         />
         <div
-          class="hidden sm:flex sm:justify-between sm:gap-5 items-center sm:text-sm xl:text-base text-white"
+          class="hidden sm:flex sm:justify-between sm:gap-5 items-center text-base text-[#FFFFFF]"
         >
           <router-link
             :to="{ name: 'Главная' }"
