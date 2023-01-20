@@ -1,10 +1,11 @@
 <template>
-  <router-link
-    to=""
-    class="flex font-medium text-sm justify-center items-center bg-[#096136] rounded-[15px] w-[182px] h-[42px]"
+  <a
+    href="#"
+    v-scroll-to="'#applicationForm'"
+    class="flex font-medium text-lg justify-center items-center bg-[#096136] rounded-[15px] w-[277px] h-[56px]"
   >
     Связаться со школой
-  </router-link>
+  </a>
 </template>
 
 <script lang="ts">
