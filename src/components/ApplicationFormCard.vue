@@ -1,69 +1,61 @@
 <template>
-  <div>
-    <div class="lg:container mx-auto p-2.5 xl:p-0">
-      <div class="border-b-2 border-[#BDBDBD] pt-10"></div>
-      <div class="mx-auto font-medium mb-8">
-        <h1 class="text-[#313131] text-[42px] leading-[55px] pt-20">
-          ОСТАЛИСЬ
-          <span class="text-[#096136]">ВОПРОСЫ?</span>
-        </h1>
+  <div id="applicationForm" class="max-w-[1180px] mx-auto p-2.5 xl:p-0">
+    <div class="font-medium mb-[30px]">
+      <h1 class="text-[#313131] text-[42px]">
+        ОСТАЛИСЬ
+        <span class="text-[#096136]">ВОПРОСЫ?</span>
+      </h1>
+    </div>
+    <div class="sm:flex justify-center w-full mx-auto space-x-[154px]">
+      <div class="w-[500px] text-lg text-[#313131]">
+        Если у Вас остались вопросы или предложения, пожалуйста оставьте заявку
       </div>
-      <div class="sm:flex justify-between w -full mx-auto">
-        <div class="flex justify-between">
-          <div class="w-[500px] text-lg text-[#313131]">
-            Если у Вас остались вопросы или предложения, пожалуйста оставьте
-            заявку
-          </div>
-          <div class="sm:w-[380px] mb-16">
-            <p id="message" class="text-lg text-[#313131] mb-10">
-              Заполните заявку и мы свяжемся с вами
-            </p>
+      <div class="sm:w-[380px] mb-16">
+        <p id="message" class="text-lg text-[#313131] mb-[13px]">
+          Заполните заявку и мы свяжемся с вами
+        </p>
 
-            <form
-              action="https://sheetdb.io/api/v1/033lsr0ddj426"
-              method="post"
-              id="sheetdb-form"
-              ref="formRef"
-              @submit.prevent="submitForm"
+        <form
+          action="https://sheetdb.io/api/v1/033lsr0ddj426"
+          method="post"
+          id="sheetdb-form"
+          ref="formRef"
+          @submit.prevent="submitForm"
+        >
+          <div
+            v-if="errors.length"
+            class="my-4 rounded-2xl border border-red-300 bg-red-50 p-4"
+          >
+            <div v-for="error in errors">{{ error }}</div>
+          </div>
+          <input
+            v-model="name"
+            type="text"
+            class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg focus:border-1-[#003a70]"
+            placeholder="Ваше имя"
+            name="data[Имя]"
+            id="name"
+            required
+          />
+          <input
+            v-model="telephone"
+            type="tel"
+            class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg"
+            placeholder="Телефон"
+            name="data[Телефон]"
+            id="phone"
+            required
+          />
+
+          <SendButton />
+
+          <p class="text-xs">
+            Нажимая кнопку отправить вы соглашаетесь с
+            <a href="" class="text-[#096136] text-decoration-line: underline"
+              >политикой конфиденциальности персональных данных</a
             >
-              <div
-                v-if="errors.length"
-                class="my-4 rounded-2xl border border-red-300 bg-red-50 p-4"
-              >
-                <div v-for="error in errors">{{ error }}</div>
-              </div>
-              <input
-                v-model="name"
-                type="text"
-                class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg focus:border-1-[#003a70]"
-                placeholder="Ваше имя"
-                name="data[Имя]"
-                id="name"
-                required
-              />
-              <input
-                v-model="telephone"
-                type="tel"
-                class="text-sm h-[48px] sm:w-[380px] w-full rounded-[10px] border-[1px] border-[#F1F2F3] mb-[15px] focus:shadow-lg"
-                placeholder="Телефон"
-                name="data[Телефон]"
-                id="phone"
-                required
-              />
-
-              <SendButton />
-
-              <p class="font-serif text-xs text-center">
-                Нажимая кнопку отправить вы соглашаетесь с
-                <a
-                  href=""
-                  class="text-[#007CC3] text-decoration-line: underline"
-                  >политикой конфиденциальности персональных данных</a
-                >
-              </p>
-            </form>
-          </div>
-        </div>
+          </p>
+        </form>
       </div>
     </div>
   </div>

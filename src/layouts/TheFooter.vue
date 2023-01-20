@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-[#007CC3] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
-    <div class="xl:container xl:w-[1440px] mx-auto p-2.5">
+  <div class="bg-[#096136] sm:pt-[80px] sm:pb-[80px] pt-20 pb-20">
+    <div class="xl:container max-w-[1180px] mx-auto p-2.5">
       <div
         class="sm:flex sm:justify-between text-center sm:text-left sm:flex-wrap"
       >
@@ -8,10 +8,10 @@
           <div class="flex justify-center sm:block">
             <img
               class="mb-[25px]"
-              src="/src/assets/images/Zerde.jpg"
+              src="/src/assets/images/Logo2.png"
               alt="Zaman"
-              height="50"
-              width="180"
+              height="90"
+              width="218"
             />
           </div>
 
@@ -28,11 +28,11 @@
 
         <div class="hidden sm:block">
           <div class="text-base font-medium block text-[#F5F6FA]">
-            <p class="font-semibold leading-[20px] mb-[20px]">Жизнь школы</p>
-            <router-link to="" class="block mb-[17px]">Жизнь школы</router-link>
-            <router-link to="" class="block mb-[17px]">Галерея</router-link>
-            <router-link to="" class="block mb-[17px]">Новости</router-link>
-            <router-link to="" class="block mb-[17px]"
+            <p class="font-semibold mb-[20px]">Жизнь школы</p>
+            <router-link to="" class="block mb-[15px]">Жизнь школы</router-link>
+            <router-link to="" class="block mb-[15px]">Галерея</router-link>
+            <router-link to="" class="block mb-[15px]">Новости</router-link>
+            <router-link to="" class="block mb-[15px]"
               >Академический календарь</router-link
             >
           </div>

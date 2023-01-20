@@ -17,9 +17,12 @@
     "@vueuse/head": "~0.7",
     "axios": "^0.27.2",
     "flowbite": "^1.4.7",
+    "keen-slider": "^6.8.5",
     "pinia": "~2.0",
     "vue": "~3.2",
-    "vue-router": "~4.0"
+    "vue-keen-slider": "^2.1.0",
+    "vue-router": "~4.0",
+    "vue-scrollto": "^2.20.0"
   },
   "devDependencies": {
     "@cypress/vite-dev-server": "~2.2",

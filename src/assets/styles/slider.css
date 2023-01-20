@@ -1,0 +1,26 @@
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+  
+  .nav-btns {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #8b8b8b;
+  }
+  
+  .nav-btns.current {
+    background: #003a70;
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+  }
+  
+  .next-prev-btn{
+      cursor: pointer;
+  }
