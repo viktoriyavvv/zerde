@@ -16,7 +16,7 @@
   "dependencies": {
     "@vueuse/head": "~0.7",
     "axios": "^0.27.2",
-    "flowbite": "^1.4.7",
+    "flowbite": "^1.6.5",
     "keen-slider": "^6.8.5",
     "pinia": "~2.0",
     "vue": "~3.2",
